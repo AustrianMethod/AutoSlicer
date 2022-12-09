@@ -1,3 +1,11 @@
+#This script is designed for audio processing (noise removal, volume normalization and HPF) 
+#and cutting into separate words. It also provides for the assignment of a name for each word 
+#from the list (a text file divided into two columns by the id-word) 
+
+#You have to first install ffmpeg for paydub, CLI SoX (https://sox.sourceforge.net/sox.html), and pandas library
+
+#thanks Ombarus for denoise part of this code
+
 #library for sound processing
 from pydub import AudioSegment
 from pydub.effects import normalize
